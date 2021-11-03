@@ -9,7 +9,7 @@ let secondMessage = "What do you think?"
 var message = firstMessage + secondMessage
 print(message) // Output: Swift is nice.What do you think?
 
-// String Interpolation
+// ~ String Interpolation ~
 print("Hello, \(message)") // Output: Hello, Swift is nice.What do you think?
 
 let apples = 3
