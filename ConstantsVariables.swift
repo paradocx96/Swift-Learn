@@ -17,7 +17,7 @@ var myMessage = "Swift is the future!"
 
 // Explicitly specifying type information
 // {var/let} <variable> : <type> = [ <value> ]
-var myMessage : String = "Swift is the future!"
+var myMessageTwo : String = "Swift is the future!"
 
 // Multiple variable declaration
 var x = 0, y = 1, z = 2
