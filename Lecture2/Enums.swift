@@ -56,4 +56,46 @@ var anEnum4: TestEnum4
 anEnum4 = .One(1)
 print(anEnum4.associatedValue())
 
+// ##############################################
+// define enum 
+enum Season {  
+  // define enum values
+  case spring, summer, autumn, winter
+}
 
+// create enum variable
+var currentSeason: Season
+
+// assign value to enum variable
+currentSeason = Season.summer
+
+print("Current Season:", currentSeason) // Output: "Current Season: summer"
+
+// ##############################################
+enum PizzaSize {
+  case small, medium, large
+}
+
+var size = PizzaSize.medium
+
+switch(size) {
+    case .small:
+    print("I ordered a small size pizza.")
+
+    case .medium:
+    print("I ordered a medium size pizza.")
+
+    case .large:
+    print("I ordered a large size pizza.");
+} // Output: "I ordered a medium size pizza."
+
+// ##############################################
+// conform Languages to caseIterable 
+enum Season: CaseIterable {
+  case spring, summer, autumn, winter 
+}
+
+// for loop to iterate over all cases
+for currentSeason in Season.allCases {
+  print(currentSeason)
+} // Output: "spring", "summer", "autumn", "winter"
